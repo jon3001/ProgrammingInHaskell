@@ -1,5 +1,7 @@
 -- ghci
 -- :load double
+--
+-- Usage:
 -- double 4
 -- double (double 8)
 
