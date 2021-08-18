@@ -4,6 +4,7 @@
 --
 -- Usage:
 -- mySum[]
+-- mySum[1..10]
 -- mySum[1,2,3]
 
 mySum []     = 0
