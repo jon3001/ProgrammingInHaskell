@@ -6,22 +6,22 @@
 -- ++   - list concatenation operator e.g. [1,2,3] ++ [4,5] is [1,2,3,4,5] 
 -- :    - colon operator - join a  single value to another list e.g. 1 : [2,3,4] is [1,2,3,4] 
 -- where - introduces local definitions i.e. lists 'smaller' and 'larger'
--- [a | a <- xs, a <= x] has parallel with set theory (discrete mathematics) 
--- i.e.: {a | a ∈ S 'and' a <= S }      'and' looked like a small 'n' in the YouTube video https://youtu.be/rIprO6zoujM
+-- [a | a <- xs, a <= x] has parallels with set theory (discrete mathematics) 
+-- i.e.: {a | a ∈ S 'and' a <= x }      'and' looked like a small 'n' in the YouTube video https://youtu.be/rIprO6zoujM
 --          {} - sets of things (squigly brackets)
 --          {a - build a set of all values 'a' ...
 --          |  - such that ...
 --          a ∈ S - 'a' is an element of the set 'S'
---          a <= S } - and a is less than or equal to x
+--          a <= x } - and 'a' is less than or equal to 'x'
 -- [a | a <- xs, a <= x] 
 --          [a          - build a list of all values 'a'
 --          | a <- xs   - such that 'a' is drawn from the list 'xs' (selecting elements from a list one-at-a-time)
---          , a <= x]   - and 'a' is less than or equal to x
+--          , a <= x]   - and 'a' is less than or equal to 'x'
 --
 -- *** Signature
 -- :type qsort - will output "qsort :: Ord a => [a] -> [a]"
 --              [a] -> [a]  ... inputs are a list things 'a'; outputs are a list things 'a'
---              Ord a =>    ... provided that a supports the constraint 'Ord' (Ordering  operatorion)
+--              Ord a =>    ... provided that 'a' supports the constraint 'Ord' (Ordering operation)
 -- 
 -- *** Usage
 --          qsort [3,1,2,4]                     => [1,2,3,4]
