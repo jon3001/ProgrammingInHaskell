@@ -1,3 +1,5 @@
+-- Modify qsort to a reverse sort
+
 rsort []        =   []
 rsort (x:xs)    =   rsort larger ++ [x] ++ rsort smaller
                     where
